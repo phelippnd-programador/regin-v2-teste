@@ -1,0 +1,13 @@
+package br.com.pscs.reginprocessoservice.model.enums;
+
+public enum StatusProcesso {
+	FINALIZADO,
+	FALTA_FINALIZAR,
+	NOVO,
+	EM_ANDAMENTO,
+	CANCELADO,
+	FINALIZADO_AGUARDADNO_LICENCA_PAGAMENTO,
+	FINALIZAR_COM_REPROVADO,
+	FINALIZAR_COM_PENDENTE;
+	
+}

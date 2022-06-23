@@ -1,0 +1,27 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: regin_processo_service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/processo_service?useTimezone=true&serverTimezono=America/Sao_Paulo
+    username: docker
+    password: admin123
+  jackson:
+    default-property-inclusion: NON_NULL
+    serialization:
+      fail-on-empty-beans: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+queue.name: envio_junta
