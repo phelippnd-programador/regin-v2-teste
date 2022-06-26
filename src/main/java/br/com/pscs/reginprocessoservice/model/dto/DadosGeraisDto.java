@@ -1,7 +1,7 @@
 package br.com.pscs.reginprocessoservice.model.dto;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class DadosGeraisDto implements Serializable {
 
@@ -11,7 +11,7 @@ public class DadosGeraisDto implements Serializable {
 	private String instituicaoOrigemProcesso;
 	private String eventos;
 	private String nome;
-	private LocalDate dataProtocolo;
+	private LocalDateTime dataProtocolo;
 	private String cpfOuCNPJdoSolicitante;
 	private String naturezaJuridica	;
 	private String tipoPedido;
@@ -45,10 +45,10 @@ public class DadosGeraisDto implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public LocalDate getDataProtocolo() {
+	public LocalDateTime getDataProtocolo() {
 		return dataProtocolo;
 	}
-	public void setDataProtocolo(LocalDate dataProtocolo) {
+	public void setDataProtocolo(LocalDateTime dataProtocolo) {
 		this.dataProtocolo = dataProtocolo;
 	}
 	public String getCpfOuCNPJdoSolicitante() {

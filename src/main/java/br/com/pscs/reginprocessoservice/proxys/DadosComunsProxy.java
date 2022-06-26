@@ -2,7 +2,7 @@ package br.com.pscs.reginprocessoservice.proxys;
 
 import org.springframework.cloud.openfeign.FeignClient;
 
-@FeignClient
+//@FeignClient
 public interface DadosComunsProxy {
 	/**
 	 * Tabela de consulta (tab_natureza_juridica)

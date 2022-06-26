@@ -33,14 +33,14 @@ public class DetalheDto implements Serializable {
 	private String capitalSocial;
 	private LocalDateTime dataInicioAtividade;
 	private String enquadramentoFiscal;
-	private String ojetoSocial;
+	private String objetoSocial;
 	// Cad. Imobiliário / Inscr. Municipal
 	private String inscricaoMunicipal;
 	private String cadastroMobiliario;
 	private String tipoEstabelecimento;
 	private boolean substitutoTributario;
 	// -----------Estabeliciemento----------//
-
+	private String iptu;
 	private EnderecoDto enderecoDto;
 	
 	// ----------------------------------------//
@@ -54,7 +54,7 @@ public class DetalheDto implements Serializable {
 	private String categoriaUso;
 	private String observacao;
 	private List<AreaDto> areasAnalise;
-	private List<AreaDto> areasAnaliseDesabilidata;
+	private List<AreaDto> areasAnaliseDesabilitada;
 	
 
 }

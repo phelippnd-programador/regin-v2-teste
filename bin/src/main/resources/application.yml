@@ -5,17 +5,16 @@ spring:
     name: regin_processo_service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.50.7:3306/rjmunic
-#    ?useTimezone=true&serverTimezono=America/Sao_Paulo
-    username: root
-    password: pscsConsultoria
+    url: jdbc:mysql://localhost:3308/processo_service?useTimezone=true&serverTimezono=America/Sao_Paulo
+    username: docker
+    password: admin123
   jackson:
     default-property-inclusion: NON_NULL
     serialization:
       fail-on-empty-beans: false
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
